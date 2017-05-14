@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuocCon.Common", "PhuocCon.Common\PhuocCon.Common.csproj", "{3EE6E0DA-8D26-477C-A676-7A3C1B8D26F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuocCon.Service", "PhuocCon.Service\PhuocCon.Service.csproj", "{7381EAB1-5952-409C-8E71-780A53769151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuocCon.Data", "PhuocCon.Data\PhuocCon.Data.csproj", "{5A85EF57-E55D-4BA8-A70D-F8E4BD16E51D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuocCon.UnitTest", "PhuocCon.UnitTest\PhuocCon.UnitTest.csproj", "{96AA549F-3432-4068-8E17-BDA603A0E91D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuocCon.Web", "PhuocCon.Web\PhuocCon.Web.csproj", "{F1ACA5F8-234E-4757-B9AE-7B5C601B15B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuocCon.Model", "PhuocCon.Model\PhuocCon.Model.csproj", "{DC90B7F6-52C5-4A1F-A4A0-515217E4731D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuocCon.Identity", "PhuocCon.Identity\PhuocCon.Identity.csproj", "{44CCBFA3-6C0D-42C5-8CE5-EBD2A294C9AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EE6E0DA-8D26-477C-A676-7A3C1B8D26F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE6E0DA-8D26-477C-A676-7A3C1B8D26F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE6E0DA-8D26-477C-A676-7A3C1B8D26F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE6E0DA-8D26-477C-A676-7A3C1B8D26F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7381EAB1-5952-409C-8E71-780A53769151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7381EAB1-5952-409C-8E71-780A53769151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7381EAB1-5952-409C-8E71-780A53769151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7381EAB1-5952-409C-8E71-780A53769151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A85EF57-E55D-4BA8-A70D-F8E4BD16E51D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A85EF57-E55D-4BA8-A70D-F8E4BD16E51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A85EF57-E55D-4BA8-A70D-F8E4BD16E51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A85EF57-E55D-4BA8-A70D-F8E4BD16E51D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96AA549F-3432-4068-8E17-BDA603A0E91D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96AA549F-3432-4068-8E17-BDA603A0E91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96AA549F-3432-4068-8E17-BDA603A0E91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96AA549F-3432-4068-8E17-BDA603A0E91D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1ACA5F8-234E-4757-B9AE-7B5C601B15B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1ACA5F8-234E-4757-B9AE-7B5C601B15B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1ACA5F8-234E-4757-B9AE-7B5C601B15B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1ACA5F8-234E-4757-B9AE-7B5C601B15B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC90B7F6-52C5-4A1F-A4A0-515217E4731D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC90B7F6-52C5-4A1F-A4A0-515217E4731D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC90B7F6-52C5-4A1F-A4A0-515217E4731D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC90B7F6-52C5-4A1F-A4A0-515217E4731D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44CCBFA3-6C0D-42C5-8CE5-EBD2A294C9AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44CCBFA3-6C0D-42C5-8CE5-EBD2A294C9AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44CCBFA3-6C0D-42C5-8CE5-EBD2A294C9AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44CCBFA3-6C0D-42C5-8CE5-EBD2A294C9AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

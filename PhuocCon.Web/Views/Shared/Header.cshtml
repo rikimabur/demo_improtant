@@ -1,0 +1,89 @@
+﻿<div class="header">
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header-left">
+                <ul class="support">
+                    <li><a href="#"><label> </label></a></li>
+                    <li><a href="#">0123456789<span class="live"> Hổ trợ</span></a></li>
+                </ul>
+                <ul class="support">
+                    <li class="van"><a href="#"><label> </label></a></li>
+                    <li><a href="#">Free shipping <span class="live">Trên 500VNĐ</span></a></li>
+                </ul>
+                <ul class="support">
+                    <li><a href="#"><label> </label></a></li>
+                    <li><a href="/gioi-thieu.html">Giới Thiệu</a></li>
+                </ul>
+                <ul class="support">
+                    <li><a href="#"><label> </label></a></li>
+                    <li><a href="/lien-he.html">Liên Hệ</a></li>
+                </ul>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="top-header-right">
+                <div class="down-top">
+                    <select class="in-drop">
+                        <option value="VietNam" class="in-of">Việt Nam</option>
+                        <option value="Japanese" class="in-of">English</option>
+                        <option value="French" class="in-of">French</option>
+                        <option value="German" class="in-of">German</option>
+                    </select>
+                </div>
+                <div class="down-top top-down">
+                    <select class="in-drop">
+                        <option value="VND" class="in-of">VNĐ</option>
+                        <option value="Dollar" class="in-of">Dollar</option>
+                        <option value="Yen" class="in-of">Yen</option>
+                        <option value="Euro" class="in-of">Euro</option>
+                    </select>
+                </div>
+                <!---->
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="bottom-header">
+        <div class="container">
+            <div class="header-bottom-left">
+                <div class="logo">
+                    <a href="/"><img src="~/Assets/Client/images/logo.png" /></a>
+                </div>
+                <div class="search">
+                    <form method="get" action="/tim-kiem.html">
+                        <input type="text" id="txtkeyword" name="keyword" placeholder="Ban can tim ....">
+                        <input type="submit" value="Tim Kiem" id="btnSearch">
+                    </form>
+
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="header-bottom-right">
+                @using (Html.BeginForm("LogOut", "Account", FormMethod.Post,new { @id="frmLogOut"}))
+                {
+                    if (Request.IsAuthenticated)
+                    {
+
+                        @Html.AntiForgeryToken();
+                        <ul class="login">
+                            <li><a href="/tai-khoan.html"><span> </span>Xin chào: @User.Identity.Name</a></li>
+                            <li><a href="javascript:;" id="btnLogOut"> Đăng Xuất </a></li> |
+                        </ul>
+                    }
+                    else
+                    {
+                        <div class="cart"><a href="/dang-nhap.html">Đăng Nhập</a></div>
+                        <div class="cart"><a href="/dang-ky.html">Đăng Ký</a></div>
+                    @*<ul class="login">
+                        <li><a href="/dang-nhap.html"><span> </span>Đăng Nhập</a></li> |
+                        <li><a href="/dang-ky.html">Đăng Ký</a></li>
+                    </ul>*@
+                    }
+                }
+                <div class="cart"><a href="/gio-hang.html"><span> </span>Giỏ Hàng</a></div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>

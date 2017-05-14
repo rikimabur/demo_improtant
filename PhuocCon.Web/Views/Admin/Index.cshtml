@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Trang Quản Trị</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="~/Assets/Admin/libs/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/Assets/Admin/libs/toastr/toastr.css"  />
+    <link rel="stylesheet" href="~/Assets/Admin/libs/angular-loading-bar/src/loading-bar.css"  />
+    <link rel="stylesheet" href="~/Assets/Admin/libs/angular-ui-select/dist/select.min.css" />
+    <link href="~/Assets/Admin/libs/angular-ui-grid/ui-grid.min.css" rel="stylesheet" />
+    <link href="~/Assets/Admin/libs/angular-ui-tree/dist/angular-ui-tree.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Assets/Admin/css/AdminLTE.min.css" />
+    <link rel="stylesheet" href="~/Assets/Admin/custom/custom.css"  />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="~/Assets/Admin/css/skins/_all-skins.min.css" />
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini" ng-app="PhuocConShop" ng-controller="rootController">
+    <div ui-view></div>
+
+    <!-- jQuery 2.2.3 -->
+    @*<script  src="~/Assets/Admin/libs/jquery/dist/jquery.min.js"></script>*@
+    <script src="~/Assets/Admin/libs/jquery/dist/jquery.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="~/Assets/Admin/libs/bootstrap/dist/js/bootstrap.js"></script>
+    @*<script  src="~/Assets/Admin/libs/bootstrap/dist/js/bootstrap.min.js"></script>*@
+    <!-- SlimScroll -->
+    @*<script  src="~/Assets/Admin/libs/slimScroll/jquery.slimscroll.min.js"></script>*@
+    <script src="~/Assets/Admin/libs/slimScroll/jquery.slimscroll.js"></script>
+    <!-- FastClick -->
+    <script  src="~/Assets/Admin/libs/fastclick/lib/fastclick.js"></script>
+    
+
+    @*<script src="~/Assets/Admin/js/app.min.js"></script>*@
+    <!-- AdminLTE App -->
+    <script src="~/Assets/Admin/js/app.js"></script>
+    <!-- Begin emble AngularJs -->
+
+    <script  src="~/Assets/Admin/libs/angular/angular.js"></script>
+    <script  src="~/Assets/Admin/libs/angular-ui-router/release/angular-ui-router.js"></script>
+    <script  src="~/Assets/Admin/libs/angular-sanitize/angular-sanitize.js"></script>
+
+    <script src="~/Assets/Admin/libs/angular-touch/angular-touch.min.js"></script>
+    <script src="~/Assets/Admin/libs/angular-animate/angular-animate.min.js"></script>
+    <script src="~/Assets/Admin/libs/angular-ui-grid/ui-grid.min.js"></script>
+    <script src="~/Assets/Admin/libs/angular-ui-tree/dist/angular-ui-tree.min.js"></script>
+    @*<script  src="~/Assets/Admin/libs/angular-resource/angular-resource.js"></script>
+
+    <script  src="~/Assets/Admin/libs/DataTables-1.10.4/jquery.dataTables.js"></script>
+
+    <script  src="~/Assets/Admin/libs/AngularDatatables/angular-datatables.js"></script>
+    <script  src="~/Assets/Admin/libs/AngularDatatables/angular-datatables.util.js"></script>
+    <script  src="~/Assets/Admin/libs/AngularDatatables/angular-datatables.options.js"></script>
+    <script  src="~/Assets/Admin/libs/AngularDatatables/angular-datatables.instances.js"></script>
+    <script  src="~/Assets/Admin/libs/AngularDatatables/angular-datatables.factory.js"></script>
+    <script  src="~/Assets/Admin/libs/AngularDatatables/angular-datatables.renderer.js"></script>
+    <script  src="~/Assets/Admin/libs/AngularDatatables/angular-datatables.directive.js"></script>
+
+    <script  src="~/Assets/Admin/libs/DataTables-1.10.4/dataTables.bootstrap.js"></script>*@
+
+    @*<script>
+        angular.element(document).ready(function () {
+        angular.bootstrap($("#appElement"), ['PhuocConShop']); // appElement là thẻ html mà chúng ta định nghĩa ng-app is the html element on which you define ng-app, myApp là tên của ứng dụng
+   });
+    </script>*@
+
+    <script  src="~/Assets/Admin/libs/toastr/toastr.js"></script>
+    <script  src="~/Assets/Admin/libs/bootbox/bootbox.js"></script>
+
+    
+    <script  src="~/Assets/Admin/libs/ckeditor/ckeditor.js"></script>
+    <script  src="~/Assets/Admin/libs/ckfinder/ckfinder.js"></script>
+    <script  src="~/Assets/Admin/libs/ngBootbox/ngBootbox.js"></script>
+    <script  src="~/Assets/Admin/libs/ng-ckeditor/ng-ckeditor.js"></script>
+    <script  src="~/Assets/Admin/libs/ckfinder/ckfinder.js"></script>
+    <script  src="~/Assets/Admin/libs/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script  src="~/Assets/Admin/libs/angular-loading-bar/build/loading-bar.js"></script>
+    <script  src="~/Assets/Admin/libs/checklist-model/checklist-model.js"></script>
+    <script  src="~/Assets/Admin/libs/chart.js/dist/Chart.js"></script>
+    <script  src="~/Assets/Admin/libs/angular-chart.js/angular-chart.js"></script>
+    <script  src="~/Assets/Admin/libs/angular-ui-select/dist/select.js"></script>
+
+    <script  src="~/App/Shared/modules/PhuocConShop.common.js"></script>
+    <script  src="~/App/Shared/footer/filters/statusFilter.js"></script>
+
+    <script  src="~/App/Shared/services/apiService.js"></script>
+    <script  src="~/App/Shared/directives/pagerDirective.js"></script>
+    <script  src="~/App/Shared/directives/asDateDirective.js"></script>
+    <script src="~/App/Shared/directives/fileUpload.directive.js"></script>
+    <script  src="~/App/Shared/services/notificationService.js"></script>
+    <script  src="~/App/Shared/services/authData.js"></script>
+    <script  src="~/App/Shared/services/authenticationService.js"></script>
+    <script  src="~/App/Shared/services/loginService.js"></script>
+    <script  src="~/App/Shared/services/commonService.js"></script>
+ 
+
+    <script  src="~/App/Components/products/products.module.js"></script>
+    <script  src="~/App/Components/product_categories/ProductCategories.module.js"></script>
+    <script  src="~/App/Components/application_groups/applicationGroups.module.js"></script>
+    <script  src="~/App/Components/application_roles/applicationRoles.module.js"></script>
+    <script  src="~/App/Components/application_users/applicationUsers.module.js"></script>
+    <script  src="~/App/Components/orders/orders.module.js"></script>
+    <script  src="~/App/Components/slide/slide.module.js"></script>
+    <script  src="~/App/Components/statistic/statistic.module.js"></script>
+    <script  src="~/App/Components/provider/Provider.module.js"></script>
+    <script src="~/App/Components/country/Country.module.js"></script>
+    <script  src="~/App/app.js"></script>
+
+ 
+
+    <script  src="~/App/Components/home/rootController.js"></script>
+    <script  src="~/App/Components/home/HomeController.js"></script>
+    <script  src="~/App/Components/login/loginController.js"></script>
+
+    <script  src="~/App/Components/product_categories/ProductCategoryListController.js"></script>
+    <script  src="~/App/Components/product_categories/ProductCategoryAddController.js"></script>
+    <script  src="~/App/Components/product_categories/ProductCategoryEditController.js"></script>
+
+    <script  src="~/App/Components/application_groups/applicationGroupListController.js"></script>
+    <script  src="~/App/Components/application_groups/applicationGroupAddController.js"></script>
+    <script  src="~/App/Components/application_groups/applicationGroupEditController.js"></script>
+
+    <script  src="~/App/Components/application_roles/applicationRoleListController.js"></script>
+    <script  src="~/App/Components/application_roles/applicationRoleAddController.js"></script>
+    <script  src="~/App/Components/application_roles/applicationRoleEditController.js"></script>
+
+    <script  src="~/App/Components/application_users/applicationUserListController.js"></script>
+    <script  src="~/App/Components/application_users/applicationUserAddController.js"></script>
+    <script  src="~/App/Components/application_users/applicationUserEditController.js"></script>
+
+    <script  src="~/App/Components/products/ProductAddController.js"></script>
+    <script  src="~/App/Components/products/ProductListController.js"></script>
+    <script  src="~/App/Components/products/ProductEditController.js"></script>
+    <script src="~/App/Components/products/ProductImportController.js"></script>
+
+    <script  src="~/App/Components/provider/ProviderListController.js"></script>
+    <script  src="~/App/Components/provider/ProviderAddController.js"></script>
+    <script  src="~/App/Components/provider/ProviderEditController.js"></script>
+
+    <script  src="~/App/Components/statistic/revenueStatisticController.js"></script>
+
+    <script  src="~/App/Components/orders/OrderListController.js"></script>
+    <script  src="~/App/Components/slide/SlideListController.js"></script>
+    <script src="~/App/Components/country/CountryListController.js"></script>
+
+
+    
+
+</body>
+</html>

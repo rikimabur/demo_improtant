@@ -1,0 +1,17 @@
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\PhuocCon.Common.dll
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\PhuocCon.Common.pdb
+E:\API\web\PhuocCon\PhuocCon.Common\obj\Debug\PhuocCon.Common.dll
+E:\API\web\PhuocCon\PhuocCon.Common\obj\Debug\PhuocCon.Common.pdb
+E:\API\web\PhuocCon\PhuocCon.Common\obj\Debug\PhuocCon.Common.csprojResolveAssemblyReference.cache
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\EPPlus.dll
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\HtmlRenderer.dll
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\HtmlRenderer.PdfSharp.dll
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\PdfSharp.Charting.dll
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\PdfSharp.dll
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\EPPlus.xml
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\HtmlRenderer.pdb
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\HtmlRenderer.PdfSharp.pdb
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\PdfSharp.xml
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\PdfSharp.Charting.xml
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\de\PdfSharp.resources.dll
+E:\API\web\PhuocCon\PhuocCon.Common\bin\Debug\de\PdfSharp.Charting.resources.dll

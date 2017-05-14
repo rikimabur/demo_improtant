@@ -1,0 +1,156 @@
+﻿@model PhuocCon.Web.Models.HomeViewModel
+@{
+    ViewBag.Title = Model.Title;
+    ViewBag.Metakeyword = Model.Metakeyword;
+    ViewBag.MetaDescription = Model.MetaDescription;
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+@*@section css{
+    <link href="~/Assets/Admin/libs/angular-carousel/dist/angular-carousel.css" rel="stylesheet" />
+    <link href="~/Assets/Client/css/slide.css" rel="stylesheet" />
+}*@
+@section js{
+    @*<script src="~/Assets/Admin/libs/angular/angular.js"></script>
+    <script src="~/Assets/Admin/libs/angular-touch/angular-touch.min.js"></script>
+    <script src="~/Assets/Admin/libs/angular-carousel/dist/angular-carousel.js"></script>
+    <script src="~/Assets/Client/js/controllers/slide.js"></script>*@
+
+    <script src="~/Assets/Client/js/jquery.wmuSlider.js"></script>
+    <script>
+        $('.example1').wmuSlider();
+    </script>
+    <script type="text/javascript">
+			    $(function() {
+			        var menu_ul = $('.menu > li > ul'),
+			               menu_a  = $('.menu > li > a');
+			        menu_ul.hide();
+			        menu_a.click(function(e) {
+			            e.preventDefault();
+			            if(!$(this).hasClass('active')) {
+			                menu_a.removeClass('active');
+			                menu_ul.filter(':visible').slideUp('normal');
+			                $(this).addClass('active').next().stop(true,true).slideDown('normal');
+			            } else {
+			                $(this).removeClass('active');
+			                $(this).next().stop(true,true).slideUp('normal');
+			            }
+			        });
+
+			    });
+    </script>
+
+}
+<div class="shoes-grid">
+        <div class="wrap-in">
+            <div class="wmuSlider example1 slide-grid">
+                <div class="wmuSliderWrapper">
+                    @foreach (var slide in Model.Slides)
+                    {
+                        <article style="position: absolute; width: 100%; opacity: 0;">
+                            <div class="banner-matter">
+                                <div class="col-md-5 banner-bag">
+                                    <img class="img-responsive " src="@slide.Image" alt="@slide.Name" />
+                                </div>
+                                <div class="col-md-7 banner-off">
+                                    @Html.Raw(slide.Content)
+                                </div>
+
+                                <div class="clearfix"> </div>
+                            </div>
+
+                        </article>
+                    }
+                </div>
+        <ul class="wmuSliderPagination">
+            @for (int i = 0; i < Model.Slides.Count(); i++)
+            {
+                <li><a href="#" class="">@i</a></li>
+            }
+        </ul>
+
+@section homeProducts{
+<div class="products">
+    <h5 class="latest-product">Sản phẩm mới nhất</h5>
+    <a class="view-all" href="/san-pham.html">Xem tất cả<span> </span></a>
+</div>
+<div class="product-left">
+    @foreach (var product in Model.LastestProduct)
+    {
+        var url = "/" + product.Alias + ".p-" + product.ID + ".html";
+        <div class="col-md-4 chain-grid grid-top-chain">
+            <a href="@url"><img class="img-responsive chain" src="@product.Image" alt="@product.Name"/></a>
+            <span class="star"> </span>
+            <div class="grid-chain-bottom">
+                <h6><a href="@url">@product.Name</a></h6>
+                <div class="star-price">
+                    <div class="dolor-grid">
+                        @if (product.PromotionPrice.HasValue)
+                        {
+                            <span class="actual">@product.PromotionPrice.Value.ToString("N0")</span>
+                        }
+                        <span class="reducedfrom">@product.Price.ToString("N0")</span>
+                        <span class="rating">
+                            <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
+                            <label for="rating-input-1-5" class="rating-star1"> </label>
+                            <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+                            <label for="rating-input-1-4" class="rating-star1"> </label>
+                            <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+                            <label for="rating-input-1-3" class="rating-star"> </label>
+                            <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+                            <label for="rating-input-1-2" class="rating-star"> </label>
+                            <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+                            <label for="rating-input-1-1" class="rating-star"> </label>
+                        </span>
+                    </div>
+                    <a class="now-get get-cart" id="btnAddToCart" href="javascript:;" data-id="@product.ID" >Mua hang</a>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+   }
+    <div class="clearfix"> </div>
+</div>
+<div class="products">
+    <h5 class="latest-product">Sản phẩm nhiều người mua</h5>
+    <a class="view-all" href="/san-pham-ban-chay.html">Xem tất cả<span> </span></a>
+</div>
+<div class="product-left">
+    @foreach (var product in Model.TopSaleProduct)
+    {
+        var url = "/" + product.Alias + ".p-" + product.ID + ".html";
+        <div class="col-md-4 chain-grid grid-top-chain">
+            <a href="@url"><img class="img-responsive chain" src="@product.Image" /></a>
+            <span class="star"> </span>
+            <div class="grid-chain-bottom">
+                <h6><a href="@url">@product.Name</a></h6>
+                <div class="star-price">
+                    <div class="dolor-grid">
+                        @if (product.PromotionPrice.HasValue)
+                        {
+                            <span class="actual">@product.PromotionPrice.Value.ToString("N0")</span>
+                        }
+                        <span class="reducedfrom">@product.Price.ToString("N0")</span>
+                        <span class="rating">
+                            <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
+                            <label for="rating-input-1-5" class="rating-star1"> </label>
+                            <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+                            <label for="rating-input-1-4" class="rating-star1"> </label>
+                            <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+                            <label for="rating-input-1-3" class="rating-star"> </label>
+                            <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+                            <label for="rating-input-1-2" class="rating-star"> </label>
+                            <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+                            <label for="rating-input-1-1" class="rating-star"> </label>
+                        </span>
+                    </div>
+                    <a class="now-get get-cart" id="btnAddToCart" href="javascript:;" data-id="@product.ID">Mua hang</a>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    }
+    <div class="clearfix"> </div>
+</div>
+}
+</div>
+</div>

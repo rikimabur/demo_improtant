@@ -1,0 +1,35 @@
+﻿@model PhuocCon.Web.Models.ApplicationUserViewModel
+@{
+    ViewBag.Title = "Thông tin";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<div class="account_grid">
+    <table>
+        <thead>
+            <tr>
+                <th>Họ Tên</th>
+                <th>Ngày sinh</th>
+                <th>Email</th>
+                <th>Số điện thoại</th>
+                <th>Địa chỉ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.FullName</td>
+                <td>@Model.BirthDate</td>
+                <td>@Model.Email</td>
+                <td>@Model.PhoneNumber</td>
+                <td>@Model.Adress</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <a href="/thay-doi-thong-tin.html">Thay đổi thông tin</a>
+    </div>
+    <div>
+        <a href="/thay-doi-mat-khau.html">Thay đổi mật khẩu</a>
+    </div>
+</div>
+
+

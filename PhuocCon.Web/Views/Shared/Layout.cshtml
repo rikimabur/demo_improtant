@@ -1,0 +1,65 @@
+﻿<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html ng-app="DemoApp">
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="keywords" content="@ViewBag.Metakeyword" />
+    <meta name="description" content="@ViewBag.MetaDescription"/>
+    @Styles.Render("~/css/base")
+    @*<link href="~/Assets/Client/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Assets/Admin/libs/jqueri-ui/themes/smoothness/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/Assets/Client/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!--theme-style-->
+    <link href="~/Assets/Client/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>*@
+
+    <!--//fonts-->
+
+    @RenderSection("css",required:false)
+</head>
+<body ng-controller="DemoCtrl">
+    @*@{Html.RenderAction("Slide", "Home");}*@
+    @{Html.RenderAction("Header", "Home");}
+    <div class="container">
+      
+        @{ Html.RenderAction("Category", "Home");}
+        @RenderBody() 
+        
+    </div>
+    @RenderSection("homeProducts", required: false)
+    <div class="clearfix"> </div>
+ 
+    <!---->
+    
+    @*<div class="clearfix"> </div>
+    </div>
+
+    <div class="clearfix"> </div>
+    </div>*@
+    @*@{ Html.RenderAction("Footer", "Home"); }*@
+ 
+    @*<script src="~/Assets/Client/js/jquery.min.js"></script>*@
+    @*<script src="~/Assets/Client/js/jquery-3.1.1.min.js"></script>
+    <script src="~/Assets/Admin/libs/jqueri-ui/jquery-ui.min.js"></script>
+    <script src="~/Assets/Admin/libs/mustache/mustache.js"></script>
+    <script src="~/Assets/Admin/libs/numeral/numeral.js"></script>
+    <script src="~/Assets/Admin/libs/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/Assets/Client/js/common.js"></script>
+    <script src="~/Assets/Client/js/controllers/ShoppingCart.js"></script>*@
+    @*<script src="~/Assets/Admin/libs/jquery-validation/dist/additional-methods.js"></script>*@
+    <!--script-->
+    @Scripts.Render("~/js/jquery")
+    @Scripts.Render("~/js/core")
+    @RenderSection("js", required: false)
+    <script src="~/Assets/Client/js/controllers/ShoppingCart.js"></script>
+</body>
+</html>
